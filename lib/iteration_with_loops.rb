@@ -5,11 +5,7 @@ def find_min_in_nested_arrays(src)
   outer_counter = 0
   
   while outer_counter < src.length do
-    inner_counter = 0
-    while inner_counter < src[outer_counter].length do
-      new_array.push(src[outer_counter][inner_counter].min)
-      inner_counter += 1
-    end
+    new_array.push(src[outer_counter].min)
     outer_counter += 1
   end
   
